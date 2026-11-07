@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<link rel="icon" type="image/svg+xml" href="{{ASSETS}}/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ASSETS}}/favicon-32.png">
+<link rel="apple-touch-icon" href="{{ASSETS}}/favicon-180.png">
+<link rel="stylesheet" href="{{ASSETS}}/style.css">
+<script>
+(function(){var t;try{t=localStorage.getItem("farisxdo-theme")}catch(e){}
+if(!t){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}
+document.documentElement.setAttribute("data-theme",t)})();
+</script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand-text" href="{{HOME_URL}}">{{BRAND}}</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">{{MENU}}</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="{{HOME_URL}}"{{NAV_CURRENT}}>{{NAV_ARTICLES}}</a>
+      <a href="{{GITHUB_URL}}" rel="noopener">GitHub</a>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <button class="theme-toggle" id="themeToggle" aria-label="{{THEME_TOGGLE}}">{{ICON_SUN}}{{ICON_MOON}}</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <p class="breadcrumb"><a href="{{HOME_URL}}">{{NAV_ARTICLES}}</a></p>
+  <p class="section-label">{{TAG_LABEL}}</p>
+  <h1 class="page-title">{{TAG_NAME}}</h1>
+
+{{TAG_NAV}}
+{{ARTICLE_LIST}}
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a class="brand-text" href="{{HOME_URL}}">{{BRAND}}</a>
+      <p class="footer-tagline">{{FOOTER_TAGLINE}}</p>
+    </div>
+    <div class="footer-meta">
+      <p>&copy; {{YEAR}} {{BRAND}}. {{FOOTER_RIGHTS}}</p>
+      <p><a href="{{GITHUB_URL}}" rel="noopener">GitHub</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ASSETS}}/main.js"></script>
+</body>
+</html>

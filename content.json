@@ -1,0 +1,22 @@
+{
+  "site": {
+    "domain": "farisxdo.github.io",
+    "brand": "farisxdo",
+    "title": "farisxdo — articles",
+    "description": "Personal technical blog: notes on security, code, and things broken along the way.",
+    "github": "https://github.com/farisxdo"
+  },
+  "blog": {
+    "label": "Blog",
+    "nav_articles": "Articles",
+    "title": "Articles",
+    "intro": "Notes on security, development, and things I break.",
+    "empty": "No articles published yet.",
+    "published": "Published",
+    "tag_label": "Tag",
+    "menu": "Menu",
+    "theme_toggle": "Switch to dark mode",
+    "footer_tagline": "Notes on security and code.",
+    "footer_rights": "All rights reserved."
+  }
+}
